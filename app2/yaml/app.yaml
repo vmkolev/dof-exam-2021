@@ -47,7 +47,7 @@ metadata:
     app: exam-app-db
 spec:
   containers:
-  - name: db-host
+  - name: db-cont
     image: redis
     ports:
     - containerPort: 6379 
@@ -55,7 +55,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: db-cont
+  name: db-host
   labels:
     app: exam-app-db-svc
 spec:
