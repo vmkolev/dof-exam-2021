@@ -19,7 +19,7 @@ spec:
         app: exam-app-web
     spec:
       containers:
-      - name: web-cont
+      - name: web-host
         image: kolevvm/dof:%IMAGE-NAME%:%IMAGE-TAG%
         ports:
         - containerPort: 80 
@@ -47,7 +47,7 @@ metadata:
     app: exam-app-db
 spec:
   containers:
-  - name: db-cont
+  - name: db-host
     image: redis
     ports:
     - containerPort: 6379 
